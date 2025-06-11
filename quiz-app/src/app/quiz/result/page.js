@@ -1,11 +1,10 @@
-'use client';
-import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import personas from '../../../../data/personalities.json';
 
-export default function ResultPage() {
-  const params = useSearchParams();
-  const type = params.get('type');
+export const dynamic = 'force-dynamic';
+
+export default function ResultPage({ searchParams }) {
+  const type = searchParams.type;
   const persona = personas[type] || {
     title: 'Explorer',
     motto: 'You did it!',
