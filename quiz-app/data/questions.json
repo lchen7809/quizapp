@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "text": "You walk into a unknown landscape. What do you do first?",
+      "options": [
+        { "label": "Wander around to see what unexpected tools you’ll find. ", "value": "A" },
+        { "label": "Strike up a conversation with someone already building something.", "value": "B" },
+        { "label": "Scan the posted floor plan to plot your route.", "value": "C" },
+        { "label": "Grab scrap materials and start fiddling.", "value": "D" },
+        { "label": " Search for a corner where no one has worked yet.", "value": "E" }
+      ]
+    },
+    {
+        "id": 2,
+        "text": "A teammate drops a wild idea. Your instinct is to...",
+        "options": [
+          { "label": "Explore where it might lead without judging.", "value": "A" },
+          { "label": "Ask who the idea could really help and why.", "value": "B" },
+          { "label": "Anchor it to the project goals and constraints", "value": "C" },
+          { "label": "Prototype a rough version on the spot.", "value": "D" },
+          { "label": "Push it even further into uncharted territory.", "value": "E" }
+        ]
+      },
+      {
+          "id": 3,
+          "text": "Your favourite tool in a workshop is..",
+          "options": [
+            { "label": "A whiteboard to roam free with thoughts.", "value": "A" },
+            { "label": "Sticky-notes filled with user quotes", "value": "B" },
+            { "label": "A canvas template that lays out the problem.", "value": "C" },
+            { "label": "A box of random craft supplies for rapid hacks.", "value": "D" },
+            { "label": "VR goggles to visualise future possibilities.", "value": "E" }
+          ]
+        },
+        {
+            "id": 4,
+            "text": "Faced with contradictory user data, you...",
+            "options": [
+                { "label": "Dive back in to uncover hidden patterns.", "value": "A" },
+                { "label": "Sit down with users and listen longer.", "value": "B" },
+                { "label": "Re-frame the problem from a higher altitude.", "value": "C" },
+                { "label": "Run a quick test to see which data holds.", "value": "D" },
+                { "label": "Ask what no one else is willing to question.", "value": "E" }
+            ]
+          },
+          {
+              "id": 5,
+              "text": "Pick a travel souvenir that mirrors your work style.",
+              "options": [
+                { "label": "A quirky trinket discovered off-route.", "value": "A" },
+                { "label": "A heartfelt story recorded from a local.", "value": "B" },
+                { "label": "A precisely annotated transit map.", "value": "C" },
+                { "label": "A gadget you hacked together on the trip.", "value": "D" },
+                { "label": "A limited-edition piece no one else found.", "value": "E" }
+              ]
+            }
+  ]

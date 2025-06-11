@@ -1,0 +1,8 @@
+{
+    "A": { "title": "Compass",  "motto": "I love finding new waysforward.", "values": "Curiosity · Initiative · Sense-making",  "img": "/images/adventurer.jpg" },
+    "B": { "title": "Field Journal", "motto": "I journey to understand people deeply.", "values": "Empathy · Listening · Perspective-taking",  "img": "/images/homebody.jpg" },
+    "C": { "title": "Map Grid",  "motto": "I bring clarity to messyterrain.",  "values": "Systems thinking · Framing problems · Strategy", "img": "/images/socializer.jpg" },
+    "D": { "title": "Toolbelt",     "motto": "I learn by trying and doing.", "values": "Experimentation · Play · Iteration", "img": "/images/thinker.jpg" },
+    "E": { "title": "Torch",     "motto": "I imagine boldly, act bravely and forge new  paths.","values":"Imagination · Risk-taking · Vision", "img": "/images/thinker.jpg" }
+
+  }
