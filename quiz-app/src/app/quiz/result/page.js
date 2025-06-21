@@ -12,7 +12,7 @@ export default function ResultPage({ searchParams }) {
   };
 
   return (
-    <div className="container">
+    <div className="container result-bg">
       <h1>You are {persona.title}</h1>
       <p><strong>Motto:</strong> {persona.motto}</p>
       <p><strong>Values:</strong> {persona.values}</p>

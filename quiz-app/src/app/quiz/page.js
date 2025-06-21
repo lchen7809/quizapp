@@ -12,7 +12,6 @@ export default function QuizPage() {
     setTally(prev => ({ ...prev, [val]: prev[val] + 1 }));
     const nextStep = step + 1;
     if (nextStep >= questions.length) {
-      // navigate to result page with query param
       const winner = Object.entries({ ...tally, [val]: tally[val] + 1 })
         .sort(([,a],[,b]) => b - a)[0][0];
       router.push(`/quiz/result?type=${winner}`);
@@ -23,7 +22,7 @@ export default function QuizPage() {
 
   const { text, options } = questions[step];
   return (
-    <div className="container">
+    <div className="container quiz-bg">
       <h2>{text}</h2>
       {options.map(opt => (
         <button
