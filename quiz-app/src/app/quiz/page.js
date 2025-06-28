@@ -23,17 +23,28 @@ export default function QuizPage() {
   const { text, options } = questions[step];
   return (
     <div className="container quiz-bg">
-      <h2>{text}</h2>
-      {options.map(opt => (
-        <button
-          key={opt.value}
-          className="button"
-          onClick={() => choose(opt.value)}
-        >
-          {opt.label}
-        </button>
-      ))}
-      <p>Question {step + 1} of {questions.length}</p>
+              <div className="quiz-bg-top">
+          <img src="./quiz-bg-top.png"/> 
+        </div>
+      <div className="quiz-container">
+        <span className="quiz-title">
+        <h2>{text}</h2>
+        </span>
+        {options.map(opt => (
+          <button
+            key={opt.value}
+            className="button"
+            onClick={() => choose(opt.value)}
+          >
+            {opt.label}
+          </button>
+        ))}
+            <span className="quiz-footer">
+        <p>Question {step + 1} of {questions.length}</p></span>
+      </div>
+      <div className="quiz-bg-bottom">
+          <img src="./quiz-bg-bottom.png"/> 
+        </div>
     </div>
   );
 }
