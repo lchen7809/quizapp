@@ -24,17 +24,19 @@ body {
   font-family: 'Lato', sans-serif !important;    /* no scrollbars ever */
 }
 
-/* .home-bg,
+
+.home-bg,
 .quiz-bg,
 .result-bg {
-  position: relative;    
-  width: 100vw;         
-  height: 100vh;         
+  position: relative;        
+  width: 100vw;              
+  height: 100vh;             
+  overflow: hidden;          
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  overflow: hidden;      
-} */
+  justify-content: space-between;
+}
+
 
 .container {
   max-width: 480px;
