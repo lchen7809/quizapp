@@ -2,14 +2,21 @@
 'use client';
 import { useState } from 'react'
 import SplashScreen from '../components/SplashScreen'
-import Banner from '../components/Banner';
 import './globals.css'
+import Head from 'next/head';
+
 
 export default function RootLayout({ children }) {
   const [showSplash, setShowSplash] = useState(true)
 
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </Head>
       <body>
 
         {showSplash

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import personas from '../../../../data/personalities.json';
+import Image from 'next/image'
+
 
 export const dynamic = 'force-dynamic';
 
@@ -14,7 +16,13 @@ export default function ResultPage({ searchParams }) {
   return (
     <div className="container result-bg">
         <div className="result-bg-top">
-          <img src="/result-bg-top.png"/> 
+          <Image
+            src="/result-bg-top.png"
+            alt="Decorative top overlay"
+            fill                  
+            priority              
+            className="result-bg-top__img"
+          />        
         </div>
       <div className="result-container">
         <h1>You are...</h1>
@@ -25,7 +33,12 @@ export default function ResultPage({ searchParams }) {
         <p><strong>Values:</strong> {persona.values}</p>
         <div className="persona-container">
         {persona.img && (
-          <img src={persona.img} alt={persona.title} style={{ width: '60%', borderRadius: 8 }} />
+          <Image
+          width={250}             
+          height={400}              
+          src={persona.img}
+          alt={persona.title}
+        />
         )}
         </div>
         <div className="back-to-home-button">
@@ -35,8 +48,14 @@ export default function ResultPage({ searchParams }) {
         </div>
       </div>
       <div className="home-bg-bottom">
-          <img src="/home-bg-bottom.png"/> 
-        </div>
+        <Image
+          src="/home-bg-bottom.png"
+          alt="Decorative bottom overlay"
+          fill                  
+          priority              
+          className="home-bg-bottom__img"
+        />      
+      </div>
     </div>
   );
 }

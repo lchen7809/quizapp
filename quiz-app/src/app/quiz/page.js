@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import questions from '../../../data/questions.json';
+import Image from 'next/image'
+
 
 export default function QuizPage() {
   const [step, setStep] = useState(0);
@@ -23,13 +25,19 @@ export default function QuizPage() {
   const { text, options } = questions[step];
   return (
     <div className="container quiz-bg">
-              <div className="quiz-bg-top">
-          <img src="./quiz-bg-top.png"/> 
+      <div className="quiz-bg-top">
+        <Image
+          src="/quiz-bg-top.png"
+          alt="Decorative top overlay for quiz page"
+          fill                  
+          priority              
+          className="quiz-bg-top__img"
+        />
         </div>
       <div className="quiz-container">
-        <span className="quiz-title">
-        <h2>{text}</h2>
-        </span>
+        <p className="quiz-title">
+          <h2>{text}</h2>
+        </p>
         {options.map(opt => (
           <button
             key={opt.value}
@@ -39,12 +47,19 @@ export default function QuizPage() {
             {opt.label}
           </button>
         ))}
-            <span className="quiz-footer">
-        <p>Question {step + 1} of {questions.length}</p></span>
+        <p className="quiz-footer">
+          <p>Question {step + 1} of {questions.length}</p>
+        </p>
       </div>
       <div className="quiz-bg-bottom">
-          <img src="./quiz-bg-bottom.png"/> 
-        </div>
+        <Image
+            src="/quiz-bg-bottom.png"
+            alt="Decorative bottom overlay for quiz page"
+            fill                  
+            priority              
+            className="quiz-bg-bottom"
+          />        
+      </div>
     </div>
   );
 }

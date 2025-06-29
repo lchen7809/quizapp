@@ -1,7 +1,7 @@
 {
     "A": { "title": "Compass",  "motto": "I love finding new waysforward.", "values": "Curiosity · Initiative · Sense-making",  "img": "/compass.png" },
     "B": { "title": "Field Journal", "motto": "I journey to understand people deeply.", "values": "Empathy · Listening · Perspective-taking",  "img": "/fieldjournal.png" },
-    "C": { "title": "Map Grid",  "motto": "I bring clarity to messyterrain.",  "values": "Systems thinking · Framing problems · Strategy", "img": "/mapgrid.png" },
+    "C": { "title": "Magnifying Glass",  "motto": "I bring clarity to messyterrain.",  "values": "Systems thinking · Framing problems · Strategy", "img": "/mapgrid.png" },
     "D": { "title": "Toolbelt",     "motto": "I learn by trying and doing.", "values": "Experimentation · Play · Iteration", "img": "/toolbelt.png" },
     "E": { "title": "Torch",     "motto": "I imagine boldly, act bravely and forge new  paths.","values":"Imagination · Risk-taking · Vision", "img": "/torch.png" }
 
