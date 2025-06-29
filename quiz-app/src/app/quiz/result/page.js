@@ -17,10 +17,11 @@ export default function ResultPage({ searchParams }) {
     <div className="container result-bg">
         <div className="result-bg-top">
           <Image
-            src="/result-bg-top.png"
+            src="/result-bg-top.webp"
             alt="Decorative top overlay"
             fill                  
-            priority              
+            priority       
+            loading="eager"             
             className="result-bg-top__img"
           />        
         </div>
@@ -38,6 +39,8 @@ export default function ResultPage({ searchParams }) {
           height={400}              
           src={persona.img}
           alt={persona.title}
+          loading="eager"      
+          priority        
         />
         )}
         </div>
@@ -49,7 +52,7 @@ export default function ResultPage({ searchParams }) {
       </div>
       <div className="home-bg-bottom">
         <Image
-          src="/home-bg-bottom.png"
+          src="/home-bg-bottom.webp"
           alt="Decorative bottom overlay"
           fill                  
           priority              

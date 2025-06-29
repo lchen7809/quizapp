@@ -27,10 +27,11 @@ export default function QuizPage() {
     <div className="container quiz-bg">
       <div className="quiz-bg-top">
         <Image
-          src="/quiz-bg-top.png"
+          src="/quiz-bg-top.webp"
           alt="Decorative top overlay for quiz page"
           fill                  
-          priority              
+          priority    
+          loading="eager"                      
           className="quiz-bg-top__img"
         />
         </div>
@@ -53,10 +54,11 @@ export default function QuizPage() {
       </div>
       <div className="quiz-bg-bottom">
         <Image
-            src="/quiz-bg-bottom.png"
+            src="/quiz-bg-bottom.webp"
             alt="Decorative bottom overlay for quiz page"
             fill                  
-            priority              
+            priority   
+            loading="eager"                       
             className="quiz-bg-bottom"
           />        
       </div>

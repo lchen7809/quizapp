@@ -36,6 +36,12 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
+        <link rel="preload" as="image" href="/home-bg-top.webp" />
+        <link rel="preload" as="image" href="/home-spot.webp" />
+        <link rel="preload" as="image" href="/home-bg-bottom.webp" />
+        <link rel="preload" as="image" href="/quiz-bg-top.webp" />
+        <link rel="preload" as="image" href="/quiz-bg-bottom.webp" />
+
       </Head>
       <body>
 

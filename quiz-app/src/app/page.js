@@ -8,19 +8,21 @@ export default function Home() {
       <div className="container home-bg ">
         <div className="home-bg-top">
           <Image
-            src="/home-bg-top.png"
+            src="/home-bg-top.webp"
             alt="Decorative top overlay"
             fill                  
-            priority              
+            priority   
+            loading="eager"           
             className="home-bg-top__img"
           />
         </div>
         <div className="home-spot">
           <Image
-            src="/home-spot.png"
+            src="/home-spot.webp"
             alt="Decorative top overlay"
             fill                  
-            priority              
+            priority      
+            loading="eager"        
             className="home-spot__img"
           />
         </div>
@@ -37,10 +39,11 @@ export default function Home() {
         </div> 
         <div className="home-bg-bottom">
           <Image
-            src="/home-bg-bottom.png"
+            src="/home-bg-bottom.webp"
             alt="Decorative bottom overlay"
             fill                  
-            priority              
+            priority  
+            loading="eager"            
             className="home-bg-bottom__img"
           />
         </div>
