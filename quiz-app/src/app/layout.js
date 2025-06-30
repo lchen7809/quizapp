@@ -22,13 +22,6 @@ export default function RootLayout({ children }) {
   }, []);
 
 
-  useEffect(() => {
-    if (pathname === '/') {
-      setShowSplash(true);      
-    }
-  }, [pathname]);
-
-
   return (
     <html lang="en">
       <Head>

@@ -35,8 +35,8 @@ export default function ResultPage({ searchParams }) {
         <div className="persona-container">
         {persona.img && (
           <Image
-          width={250}             
-          height={400}              
+          width={150}             
+          height={300}             
           src={persona.img}
           alt={persona.title}
           loading="eager"      

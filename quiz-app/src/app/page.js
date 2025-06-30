@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <div className="home-container"> {/* use this container to rotate  */}
           <p className="home-title">
-            <h1>What Is Your Designer Personality?</h1>
+            WHAT IS YOUR DESIGNER PERSONALITY?
           </p>
           <span className="home-subtitle" >Answer these 5 questions to find out what kind of designer you are! Ready for the quiz? </span>
           <div className="home-button">
