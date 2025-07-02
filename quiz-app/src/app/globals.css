@@ -118,7 +118,7 @@ body {
   background:
   url('/result-bg.webp') center/cover no-repeat,
   linear-gradient(135deg, #471751, #022748, #471751);
-  position: relative
+  position: relative;
 }
 
 .banner {
@@ -275,7 +275,7 @@ body {
 
 .result-container{
   position: relative;
-  padding: 50px 30px 30px 30px;
+  padding: 30px 30px 50px 30px;
   margin-bottom:60px;
   z-index: 1000;
 }
@@ -348,6 +348,19 @@ body {
 .desc-box-1 { background: #991b6f; }
 .desc-box-2 { background: #c11889; }
 .desc-box-3 { background: #fe4cc3; }
+@media (max-height: 670px) {
+  .result-container-subtitle{
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .result-title{
+    font-size: 25px;
+  }
+  .result-container {
+    padding: 60px 30px 30px 30px;
+  }
+}
+
 
 @media (max-height: 710px) {
   .result-container-subtitle{
@@ -385,7 +398,5 @@ body {
     margin-top: 10px;
     font-size:20px;
   }
-  .result-title{
-    font-size: 30px;
-  }
+
 }
