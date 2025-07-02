@@ -28,7 +28,7 @@ export default function ResultPage({ searchParams }) {
         <div className="result-title">
           <p>{persona.title}</p>
         </div>
-        <p style={{fontSize:13, marginTop: 10}}><i>"{persona.motto}" </i>       </p>
+        <p style={{fontSize:13, marginTop: 10}}><i>&quot;{persona.motto}&quot; </i>       </p>
         <p style={{fontSize:14}}>{persona.value}</p>
 
         <div className="persona-container">
