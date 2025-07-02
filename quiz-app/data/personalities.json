@@ -1,8 +1,42 @@
 {
-    "A": { "title": "COMPASS",  "motto": "I love finding new waysforward.", "values": "Curiosity · Initiative · Sense-making",  "img": "/compass.png" },
-    "B": { "title": "FIELD JOURNAL", "motto": "I journey to understand people deeply.", "values": "Empathy · Listening · Perspective-taking",  "img": "/fieldjournal.png" },
-    "C": { "title": "MAGNIFYING GLASS",  "motto": "I bring clarity to messyterrain.",  "values": "Systems thinking · Framing problems · Strategy", "img": "/mapgrid.png" },
-    "D": { "title": "TOOLBELT",     "motto": "I learn by trying and doing.", "values": "Experimentation · Play · Iteration", "img": "/toolbelt.png" },
-    "E": { "title": "TORCH",     "motto": "I imagine boldly, act bravely and forge new  paths.","values":"Imagination · Risk-taking · Vision", "img": "/torch.png" }
+    "A": { "title": "THE CURIOUS TRAILBLAZER",  
+    "motto": "I love finding new ways forward.",
+    "value":"Explorer A embodies curiosity, initiative, and sense-making.", 
+    "desc1":"You thrive on discovering uncharted paths, using a compass as your spirit object to navigate with purpose and direction.",
+    "desc2":"The red, triangular hat you wear suggests a sharp, investigative nature.",
+    "desc3":"The vibrant red colour reflects your energetic and enthusiastic approach to exploration, always eager to uncover new possibilities.", 
+    "img": "/PersonaA.png" },
+
+    "B": { "title": "THE EMPATHETIC WANDERER",
+     "motto": "I journey to understand people deeply.",
+      "value":"Explorer B is defined by empathy, listening, and perspective-taking.", 
+      "desc1":"Your field journal spirit object symbolizes your thoughtful documentation of experiences and insights.",
+      "desc2":"The blue shaped thought bubbles represents your gentleness, your open-mindedness and your reflective character.",
+      "desc3":"The calming blue hue mirrors your compassionate and introspective nature, fostering trust and understanding.",   
+      "img": "/PersonaB.png" },
+
+    "C": { "title": "THE STRATEGIC NAVIGATOR",  
+    "motto": "I bring clarity to messy terrain.",  
+    "value":"As Explorer C, you excel in systems thinking, framing problems, and strategy.", 
+    "desc1":"Your magnifying glass spirit object highlights your ability to analyse and decipher complex challenges.",
+    "desc2":"The green, tesseract-like shape conveys structure, depth, and precision.",
+    "desc3":"The fresh green color embodies growth and stability, aligning with your methodical and insightful problem-solving skills.", 
+    "img": "/PersonaC.png" },
+
+    "D": { "title": "THE PLAYFUL EXPERIMENTER", 
+    "motto": "I learn by trying and doing.",  
+    "value":"Explorer D embodies experimentation, play, and iteration.", 
+    "desc1":"Your toolbelt spirit object reflects a hands-on, adaptable, and resourceful approach to learning.",
+    "desc2":"The purple, spiky shape demonstrates your creativity, energy, and action.",
+    "desc3":"The dynamic purple hue captures your innovative and playful spirit, always ready to experiment and refine.",
+    "img": "/PersonaD.png" },
+
+    "E": { "title": "THE VISIONARY PATHFINDER", 
+    "motto": "I imagine boldly, act bravely and forge new paths.", 
+    "value":"The visionary pathfinder is fueled by imagination, risk-taking, and vision.", 
+    "desc1":"Your lantern spirit object symbolizes your role as a guiding light, illuminating new directions.",
+    "desc2":"The orange, flame-like shape radiates your warmth, boldness, and vitality.",
+    "desc3":"The fiery orange colour reflects your courageous and visionary essence, inspiring others to follow your lead.", 
+    "img": "/PersonaE.png" }
 
   }

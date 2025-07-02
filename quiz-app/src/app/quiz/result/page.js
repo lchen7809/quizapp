@@ -10,55 +10,57 @@ export default function ResultPage({ searchParams }) {
   const persona = personas[type] || {
     title: 'Explorer',
     motto: 'You did it!',
-    values: ''
+    values: '',
+    desc1: '',
+    desc2: '',
+    desc3: '',
+    img: ''
   };
+
+  const descriptions = [persona.desc1, persona.desc2, persona.desc3].filter(Boolean);
+
 
   return (
     <div className="container result-bg">
-        <div className="result-bg-top">
-          <Image
-            src="/result-bg-top.webp"
-            alt="Decorative top overlay"
-            fill                  
-            priority       
-            loading="eager"             
-            className="result-bg-top__img"
-          />        
-        </div>
+
       <div className="result-container">
-        <h1>You are...</h1>
-        <span className="result-title">
-        <h1>{persona.title}</h1>
-        </span>
-        <p><strong>Motto:</strong> {persona.motto}</p>
-        <p><strong>Values:</strong> {persona.values}</p>
-        <div className="persona-container">
-        {persona.img && (
-          <Image
-          width={150}             
-          height={300}             
-          src={persona.img}
-          alt={persona.title}
-          loading="eager"      
-          priority        
-        />
-        )}
+        <div className="result-container-subtitle">You are a type {searchParams.type} explorer</div>
+        <div className="result-title">
+          <p>{persona.title}</p>
         </div>
+        <p style={{fontSize:13, marginTop: 10}}><i>"{persona.motto}" </i>       </p>
+        <p style={{fontSize:14}}>{persona.value}</p>
+
+        <div className="persona-container">
+          {persona.img && (
+            <Image
+    
+            width={120}
+            height={220}
+            src={persona.img}
+            alt={persona.title}
+            loading="eager"      
+            priority        
+            className="persona-img"
+          />
+          )}
+        </div>
+
+        <div className="desc-boxes-vertical">
+          {descriptions.map((desc, idx) => (
+            <div key={idx} className={`desc-box desc-box-${idx + 1}`}>
+              {desc}
+            </div>
+          ))}
+        </div>
+
         <div className="back-to-home-button">
         <Link href="/" style={{ textDecoration: 'none' }}>
-          <button className="button">Back to Home</button>
+          <button className="button back-to-home" >Take The Quiz Again</button>
         </Link>
         </div>
       </div>
-      <div className="home-bg-bottom">
-        <Image
-          src="/home-bg-bottom.webp"
-          alt="Decorative bottom overlay"
-          fill                  
-          priority              
-          className="home-bg-bottom__img"
-        />      
-      </div>
+
     </div>
   );
 }
