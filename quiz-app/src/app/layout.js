@@ -12,6 +12,9 @@ export default function RootLayout({ children }) {
   const [showSplash, setShowSplash] = useState(true)
   const pathname = usePathname();
 
+  const bodyClass = pathname.startsWith('/quiz/result')
+  ? 'allow-scroll'
+  : 'no-scroll';
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -36,7 +39,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" as="image" href="/quiz-bg-bottom.webp" />
 
       </Head>
-      <body>
+      <body className={bodyClass}>
 
         {showSplash
           ? <SplashScreen onFinish={() => setShowSplash(false)} />

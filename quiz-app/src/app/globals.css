@@ -18,15 +18,23 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;  
   background: black;
   font-family: 'Lato', sans-serif !important;   
 }
 
 
+body.no-scroll {
+  overflow: hidden;   
+}
+
+
+body.allow-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .home-bg,
-.quiz-bg,
-.result-bg {
+.quiz-bg {
   position: relative;        
   width: 100vw;              
   height: 100vh;             
@@ -35,6 +43,18 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.result-bg {
+  position: relative;        
+  width: 100vw;              
+  height: 100vh;             
+  overflow-x: hidden;
+  overflow-y: auto;        
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 
 .container {
@@ -179,16 +199,6 @@ body {
   url('/home-spot.webp') center/cover no-repeat;
 }
 
-/* .home-spot {
-  top:0px;
-  left:0px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  background:
-  url('/home-spot.webp') center/cover no-repeat;
-} */
 
 .home-bg-top{
   opacity: 1;
@@ -201,12 +211,6 @@ body {
   background:
   url('/home-bg-top.webp') center/cover no-repeat;
 }
-/* .home-bg-top img{
-  width: 100%;
-  height: 100%;
-  object-fit:fill;
-  z-index: 0;
-} */
 
 .home-bg-bottom{
   opacity: 1;
@@ -275,7 +279,7 @@ body {
   z-index: 0;
   position: absolute;
   background:
-  url('/quiz-bg-top.webp') center/cover no-repeat;
+  url('/quiz-bg-bottom.webp') center/cover no-repeat;
 }
 
 .quiz-bg-bottom img{
@@ -290,7 +294,7 @@ body {
 
 .result-container{
   position: relative;
-  padding: 10px 30px 50px 30px;
+  padding: 50px 30px 30px 30px;
   margin-bottom:60px;
   z-index: 1000;
 }
@@ -365,8 +369,8 @@ body {
 .desc-box-3 { background: #fe4cc3; }
 
 /* SE  */
-@media (max-height: 670px) { 
-  .result-container-subtitle{
+@media (min-height: 500px) { 
+  /* .result-container-subtitle{
     margin-top: 5px;
     font-size: 13px;
   }
@@ -375,14 +379,31 @@ body {
   }  
   .desc-box {
     font-size:13px;
-  }
+  } */
   .result-container {
-    padding: 40px 30px 30px 30px;
+    padding: 190px 30px 0px 30px;
   }
 }
 
+@media (min-height: 590px) { 
+  .result-container {
+    padding: 100px 30px 0px 30px;
+  }
+}
 
-@media (max-height: 740px) {
+@media (min-height: 650px) { 
+  .result-container {
+    padding: 60px 30px 0px 30px;
+  }
+}
+
+@media (min-height: 700px) { 
+  .result-container {
+    padding: 20px 30px 0px 30px;
+  }
+}
+
+@media (min-height: 740px) {
   .result-container-subtitle{
     margin-top: 10px;
     font-size: 18px;
