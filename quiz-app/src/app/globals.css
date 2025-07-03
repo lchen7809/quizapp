@@ -18,6 +18,11 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+
+    height: 100svh; /* real fix */
+    padding-bottom: env(safe-area-inset-bottom); /* make room for nav bar */
+
+  
   overflow: hidden;  
   background: black;
   font-family: 'Lato', sans-serif !important;   
@@ -421,7 +426,8 @@ body {
     margin-top: 10px;
     font-size:20px;
   }
-
+  .back-to-home {background-color: #fe4cc3;
+  }
 }
 
 @media (min-height: 890px) {
@@ -430,5 +436,4 @@ body {
   }
   .back-to-home {background-color: #fff;
   }
-
 }
