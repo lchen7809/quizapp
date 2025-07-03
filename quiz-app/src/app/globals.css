@@ -397,6 +397,9 @@ body {
     width :100px !important;
     height: 200px !important;
   }
+  .result-container{
+    padding: 0px 30px 70px 30px;
+  }
 }
 
 
