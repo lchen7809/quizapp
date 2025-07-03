@@ -19,7 +19,6 @@ body {
   width: 100vw;
   height: 100vh;
 
-    height: 100svh; /* real fix */
     padding-bottom: env(safe-area-inset-bottom); /* make room for nav bar */
 
   
@@ -34,7 +33,7 @@ body {
 .result-bg {
   position: relative;        
   width: 100vw;              
-  height: 100vh;             
+  height: 100%;             
   overflow: hidden;          
   display: flex;
   flex-direction: column;
@@ -435,5 +434,11 @@ body {
     padding: 0px 30px 100px 30px;
   }
   .back-to-home {background-color: #fff;
+  }
+}
+
+@supports (height: 100svh) {
+  html, body {
+    height: 100svh;
   }
 }
