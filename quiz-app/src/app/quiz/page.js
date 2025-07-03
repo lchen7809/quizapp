@@ -42,14 +42,14 @@ export default function QuizPage() {
   return (
     <div className="container quiz-bg">
       <div className="quiz-bg-top">
-        <Image
+        {/* <Image
           src="/quiz-bg-top.webp"
           alt=""
           fill
           priority
           loading="eager"
           className="quiz-bg-top__img"
-        />
+        /> */}
       </div>
 
       <div className="quiz-container">
@@ -80,14 +80,14 @@ export default function QuizPage() {
       </div>
 
       <div className="quiz-bg-bottom">
-        <Image
+        {/* <Image
           src="/quiz-bg-bottom.webp"
           alt=""
           fill
           priority
           loading="eager"
           className="quiz-bg-bottom__img"
-        />
+        /> */}
       </div>
     </div>
   );

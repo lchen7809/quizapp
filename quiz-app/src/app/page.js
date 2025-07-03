@@ -7,24 +7,24 @@ export default function Home() {
   return (
       <div className="container home-bg ">
         <div className="home-bg-top">
-          <Image
+          {/* <Image
             src="/home-bg-top.webp"
             alt="Decorative top overlay"
             fill                  
             priority   
             loading="eager"           
             className="home-bg-top__img"
-          />
+          /> */}
         </div>
         <div className="home-spot">
-          <Image
+          {/* <Image
             src="/home-spot.webp"
             alt="Decorative top overlay"
             fill                  
             priority      
             loading="eager"        
             className="home-spot__img"
-          />
+          /> */}
         </div>
         <div className="home-container"> {/* use this container to rotate  */}
           <p className="home-title">
@@ -38,14 +38,14 @@ export default function Home() {
           </div>
         </div> 
         <div className="home-bg-bottom">
-          <Image
+          {/* <Image
             src="/home-bg-bottom.webp"
             alt="Decorative bottom overlay"
             fill                  
             priority  
             loading="eager"            
             className="home-bg-bottom__img"
-          />
+          /> */}
         </div>
       </div> 
 
