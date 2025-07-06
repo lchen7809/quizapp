@@ -51,6 +51,7 @@ export default function RootLayout({ children }) {
               GOVTECH DESIGN FESTIVAL | 1-31 JULY 2025
             </div>
             {children}
+            <Analytics />
           </div>
           </> 
         }
