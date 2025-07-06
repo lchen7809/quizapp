@@ -1,5 +1,6 @@
 // src/app/layout.js
 'use client';
+import { Analytics } from "@vercel/analytics/next"
 import { useState,useEffect } from 'react'
 import SplashScreen from '../components/SplashScreen'
 import { usePathname } from 'next/navigation';
